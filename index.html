@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DecPay - A decentralized payment solution</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+        html {
+            --primary-color: #0d6efd;
+        }
+
+        .header {
+            width: 100%;
+            height: auto;
+            float: left;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            align-items: center;
+            display: flex;
+        }
+
+        .header>.logo {
+            flex-shrink: 0;
+            width: auto;
+            margin-right: 50px;
+        }
+
+        .header>.menus {
+            flex: 1;
+        }
+
+        .header>.menus>.item {
+            display: block;
+            width: auto;
+            height: auto;
+            float: left;
+            margin-right: 30px;
+            line-height: 50px;
+            color: rgba(0, 0, 0, .6);
+            text-decoration: none;
+        }
+
+        .header>.menus>.item:hover {
+            color: rgba(0, 0, 0, .8);
+        }
+
+        .header>.right-menus {
+            flex-shrink: 0;
+            margin-left: 15px;
+        }
+
+        .header>.right-menus>.btn-active {
+            display: block;
+            width: 100px;
+            height: 40px;
+            float: left;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 20px;
+            text-decoration: none;
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+            box-shadow: 0 4px 10px 0 rgb(153 153 158 / 20%);
+        }
+
+        .header>.right-menus>.btn-active:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .main-body {
+            width: 100%;
+            height: auto;
+            float: left;
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+
+        .main-body>.app-name {
+            font-size: 72px;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .main-body>.app-desc {
+            font-size: 32px;
+            color: rgba(0, 0, 0, .7);
+        }
+
+        .main-body>.options>.btn-get-started {
+            display: inline-block;
+            width: 180px;
+            height: 50px;
+            border-radius: 25px;
+            line-height: 50px;
+            background-color: var(--primary-color);
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+            margin-right: 10px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px 0 rgb(153 153 158 / 20%);
+        }
+
+        .main-body>.options>.btn-get-started:hover {
+            background-color: white;
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+        }
+
+        .main-body>.options>.btn-demo {
+            display: inline-block;
+            width: 180px;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 25px;
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        .footer {
+            width: 100%;
+            height: auto;
+            float: left;
+            display: flex;
+            align-items: center;
+            padding-top: 100px;
+            padding-bottom: 50px;
+        }
+
+        .footer>.left-box {
+            flex: 1;
+            text-align: left;
+            color: rgba(0, 0, 0, .4);
+            line-height: 40px;
+            font-size: 13px;
+        }
+
+        .footer>.right-box {
+            flex: 1;
+            text-align: right;
+            line-height: 40px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="header">
+                    <div class="logo">
+                        <a href="https://decpay.finance">
+                            <img src="/images/logo.png" width="140" />
+                    </div>
+                    <div class="menus">
+                        <a href="https://decpay.finance" class="item">Index</a>
+                        <a href="https://doc.decpay.finance" class="item">Document</a>
+                    </div>
+                    <div class="right-menus">
+                        <a class="btn-active" href="https://testnet1.decpay.finance">TestNet</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="main-body text-center">
+                    <h1 class="app-name">DecPay</h1>
+                    <p class="app-desc">A decentralized payment solution</p>
+                    <div class="options">
+                        <a href="https://doc.decpay.finance" class="btn-get-started">Get started</a>
+                        <a href="https://demo.decpay.finance" class="btn-demo">Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="footer">
+                    <div class="left-box">
+                        &copy;2021 DecPay.Finance
+                    </div>
+                    <div class="right-box">
+                        <a href="https://github.com/Decpay">Github</a>
+                        <a href="https://twitter.com/DecpayDao">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
